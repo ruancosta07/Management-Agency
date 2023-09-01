@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background-color: #303030;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #606060;
+    border-radius: 30px;
+}
+button {
+    cursor: pointer;
+    text-align: center;
+}
+
+body {
+    background-color: #121212;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    background-color: #121212;
+    /* grid-template-areas:
+    "header header"
+    "gradient gradient"
+    "startup startup"
+    "templates templates"
+    ; */
+}
+
+main {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > h1{
+    background: linear-gradient(45deg, rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+main button {
+    padding: 2px 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(33, 85, 180);
+    width: 140px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+main p {
+    font-weight: 600;
+    margin-left: 5px;
+    -webkit-text-fill-color: white;
+}
+
+.h2{
+    -webkit-text-stroke: 1px gainsboro;
+    -webkit-text-fill-color: black;
+}
+.imgs, .imgs2, .imgs3, .imgs4, .imgs5{
+    display: none;
+}
+.gradient {
+    background: linear-gradient(45deg, rgb(120, 221, 255), rgb(118, 245, 118));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.startup {
+
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.startup-text {
+    background: linear-gradient(45deg, rgb(120, 221, 255), rgb(118, 245, 118));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.startup-link img {
+    margin-top: 2px;
+    height: 15px;
+}
+
+.startup-link {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.startup-card {
+    width: 85%;
+    height: 50%;
+    font-size: 1.5;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 0px 5px;
+}
+
+.startup-card p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.startup-card>img {
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: #606060;
+    border-radius: 5px;
+    height: 40px;
+}
+
+header {
+    border-bottom: 1px solid gainsboro;
+    justify-self: center;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header #logo {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    align-self: center;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+#nav-button {
+    margin-right: 5px;
+    background: linear-gradient(45deg, rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    align-self: center;
+    font-size: 15px;
+    width: 90px;
+    font-weight: 500;
+}
+
+nav {
+    display: none;
+}
+
+.templates {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.templates button {
+    margin: 15px 0px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 2px 15px;
+    background-color: rgb(33, 85, 180);
+    color: white;
+}
+.template-text h5, h2{
+    background: linear-gradient(45deg, rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.template-img img {
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.testimonials-text {
+    background: linear-gradient(45deg, rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-testimonials {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containers-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.card-testimonials {
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    color: ghostwhite;
+    background-color: #404040;
+}
+
+.card-testimonials img {
+    clip-path: circle();
+    height: 60px;
+}
+
+.card-testimonials{
+    margin: 10px 0px;
+}
+
+.container-questions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ghostwhite;
+}
+
+.container-questions h4,
+h2 {
+    text-align: center;
+    background: linear-gradient(45deg, rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container-modal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-modal > .modal-template {
+    border-radius: 5px;
+    color: ghostwhite;
+    margin: 10px 0px;
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-areas:
+        "p1 a"
+        "div div";
+    background-color: #202020;
+
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.modal a {
+    grid-area: a;
+
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.modal-template img {
+    border-radius: 5px;
+    background-color: #404040;
+    height: 25px;
+    width: 25px;
+    padding: 1px;
+}
+
+.modal-template div {
+    grid-area: div;
+}
+
+.modal-template a {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.modal-template div p {
+    margin: 10px 0px;
+}
+
+.display {
+    display: none;
+
+}
+
+.opacity {
+    animation: opacity 1.5s ease-out;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+}
+
+footer{
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+}
+.brand,.about,.features,.contact{
+    font-weight: 500;
+    padding: 5px 0px;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand,.about,.features, .contact a{
+    width: fit-content;
+}
+
+.brand h4{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.about h4{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.features h4{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.contact h4{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.brand a{
+    height: 30px;
+}
+.brand img{
+    margin-right: 2px;
+    position: relative;
+    top: 3px;
+    height: 20px;
+    filter: contrast(2);
+}
+
+.end-page{
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.end-page img{
+    border-radius: 5px;
+    background-color: #303030;
+    padding: 5px;
+    height: 25px;
+}
+.links{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.links a{
+    margin: 0px 10px;
+}
+.arrow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 2;
+}
+
+@media(min-width:768px){
+    header #logo{
+        font-size: 30px;
+    }
+    header #nav-button{
+        width: auto;
+        height: auto;
+        padding: 2px 10px;
+        font-size: 22px;
+    }
+    main h1{
+        font-size: 5em;
+    }
+    main p{
+        font-size: 1.5em;
+    }
+    main button{
+        width: 200px;
+        font-size: 1.3em;
+    }
+    .startup{
+        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+    .startup-card{
+        height: 21%;
+        margin: 0;
+        flex-basis: 45%;
+    }
+    .startup-text{
+        flex-basis: 100%;
+    }
+    .startup-text p{
+        font-size: 1.5em;
+    }
+    .startup-text h2{
+        font-size: 2.5em;
+    }
+    .templates{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .template-img img{
+        height: 500px;
+        width: auto;
+    }
+    .template-text h5{
+        font-size: 1.2em;
+    }
+    .template-text h2{
+        font-size: 2.6em;
+    }
+    .template-text p{
+        font-size: 1.2em;
+        padding: 0px 5px;
+    }
+    .templates button{
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    .containers-card{    
+        display: grid;
+        grid-template-areas: 
+        "card1 card2"
+        ;
+        gap: 20px;
+    }
+    .card-testimonials{
+        width: 300px;
+        margin: 0;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width:1024px){
+    header{
+        height: 10vh;
+    }
+    header #logo{
+        font-size: 20px;
+    }
+    header nav{
+        display: flex;
+        align-self: center;
+    }
+    header nav a{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+    header #nav-button{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        font-size: 18px;
+    }
+    main{
+        justify-content: center;
+        height: 100vh;
+    }
+    main h1{
+        font-size: 6rem;
+    }
+    main p{
+        font-size: 20px;
+    }
+    main button{
+        margin-top: 50px;
+        font-size: 20px;
+        width: 190px;
+        height: 40px;
+    }
+
+    .startup{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        height: 100vh;
+        gap: 30px;
+    }
+    .startup-card{
+        height: 25%;
+    }
+    .startup-text h2{
+        font-size: 50px;
+    }
+    .startup-text p{
+        font-size: 25px;
+    }
+    .startup-card{
+        margin: 0;
+        flex-basis: 25%;
+    }
+
+    .templates{
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-content: center;
+        color: white;
+    }
+    .template-text{
+        text-align: center;
+        flex-basis: 60%;
+    }
+    .template-text h2{
+        font-size: 55px;
+    }
+    .template-text h5{
+        font-size: 40px;
+    }
+    .template-text p{
+        font-size: 20px;
+    }
+    .template-text button{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .template-img{
+        justify-content: center;
+        display: flex;
+        flex-basis: 30%;
+    }
+    .template-img img{
+        margin: 0;
+        padding: 0px;
+        height: 600px;
+        width: 400px;
+    }
+    .container-testimonials{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testimonials-text h4{
+        justify-self: center;
+        font-size: 50px;
+    }
+    .testimonials-text h2{
+        height: 20vh;
+        font-size: 60px;
+    }
+    .containers-card{
+        grid-template-areas: 
+        "card1 card2 card3"
+        ;
+    }
+   .container-questions{
+    height: 140vh;
+    justify-content: center;
+   }
+   .container-questions h2{
+    font-size: 50px;
+   }
+   .container-questions h4{
+    font-size: 25px;
+   }
+   .modal-template{
+    font-size: 20px;
+    margin: 20px 0px;
+   }
+   .end-page{
+    padding: 0;
+   }
+}
+
+@media (min-width:1440px){
+    main h1{
+        font-size: 8rem;
+    }
+    .startup-card h4{
+        font-size: 1.2em;
+    }
+    .startup-card p{
+        font-size: 1.2em;
+    }
+}

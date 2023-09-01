@@ -1,0 +1,39 @@
+button:active{
+    transform: scale(.8);
+    transition: 100ms;
+}
+.display{
+    display: none;
+}
+header nav a:hover{
+    background: linear-gradient(45deg,rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+header nav a:active{
+    transform: scale(.8);
+    transition: 100ms;
+}
+
+footer a:active{
+    color: rgb(0, 102, 255);
+}
+.links a:active{
+    transform: scale(.8);
+    transition: 100ms;
+    filter: brightness(.8);
+}
+[data-anime="grow"]{
+    transform: scale(.5);
+    transition: .5s;
+}
+
+[data-anime]{
+    opacity: 0;
+}
+
+[data-anime].animate{
+    transform: scale(1);
+    opacity:1;
+}
